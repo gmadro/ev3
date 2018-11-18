@@ -24,10 +24,22 @@ def roll(motor, led_group, direction):
     
     return on_press
 
+def steer(motor, direction):
+    def on_press(state):
+        if state:
+            motor.run_to_pos(direction)
+        else:
+            motor.set_pos(0)
+
+    return on_press
+
 rc.on_channel1_top_left = roll(mC, 'LEFT',   1)
+rc.on_channel1_top_left = roll(mD, 'RIGHT',   1)
 rc.on_channel1_bottom_left = roll(mC, 'LEFT',  -1)
-rc.on_channel1_top_right = roll(mD, 'RIGHT',  1)
-rc.on_channel1_bottom_right = roll(mD, 'RIGHT', -1)
+rc.on_channel1_bottom_left = roll(mD, 'RIGHT',  -1)
+
+rc.on_channel1_top_right = steer(mA, 1)
+rc.on_channel1_bottom_right = steer(mA, -1)
 print("Robot Starting")
 
 run = True
