@@ -1,4 +1,6 @@
-from ev3dev.auto import *
+#!/usr/bin/env python3
+
+from ev3dev2.auto import *
 
 mA = Motor(OUTPUT_A)
 mB = Motor(OUTPUT_B)
