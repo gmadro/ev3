@@ -12,5 +12,5 @@ leds.all_off()
 
 print("Robot Starting")
 
-mA.on_for_rotations(SppedPercent(50, 10)
-mB.on_for_rotations(SppedPercent(50, 10)
+mA.on_for_rotations(SpeedPercent(50, 10)
+mB.on_for_rotations(SpeedPercent(50, 10)
