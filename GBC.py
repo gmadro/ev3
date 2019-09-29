@@ -5,7 +5,7 @@ from ev3dev2.motor import LargeMotor, OUTPUT_A, OUTPUT_B, OUTPUT_C, OUTPUT_D, Sp
 from ev3dev2.led import Leds
 
 mA = MediumMotor(OUTPUT_A)
-mB = MediumMotor(OUTPIT_B)
+mB = MediumMotor(OUTPUT_B)
 
 leds = Leds()
 leds.all_off()
