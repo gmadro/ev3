@@ -12,5 +12,5 @@ leds.all_off()
 
 print("Robot Starting")
 
-mA.on(SpeedRPM(80))
+mA.on(SpeedRPM(-80))
 mB.on(SpeedRPM(80))
