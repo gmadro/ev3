@@ -27,4 +27,4 @@ run = True
 
 while run:
     roll(mA, 'LEFT', 1)
-    roll(mB, 'RIGHT' 1)
+    roll(mB, 'RIGHT', 1)
