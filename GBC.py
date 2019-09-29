@@ -12,5 +12,5 @@ leds.all_off()
 
 print("Robot Starting")
 
-mA.on_for_seconds(SpeedRPM(200), 10)
-mB.on_for_seconds(SpeedRPM(200), 10)
+mA.on_for_seconds(SpeedRPM(100), 10)
+mB.on_for_seconds(SpeedRPM(100), 10)
