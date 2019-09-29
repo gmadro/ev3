@@ -10,21 +10,7 @@ mB = MediumMotor(OUTPUT_B)
 leds = Leds()
 leds.all_off()
 
-def roll(motor, led_group, direction):
-    def on_press(state):
-        if state:
-            motor.run_forever(speed_sp=600*direction)
-            leds.set_color(led_group, 'GREEN')
-        else:
-            motor.stop(stop_action='brake')
-            leds.all_off()
-    
-    return on_press
-
 print("Robot Starting")
 
-run = True
-
-while run:
-    roll(mA, 'LEFT', 1)
-    roll(mB, 'RIGHT', 1)
+mA.on_for_rotations(SppedPercent(50, 10)
+mB.on_for_rotations(SppedPercent(50, 10)
